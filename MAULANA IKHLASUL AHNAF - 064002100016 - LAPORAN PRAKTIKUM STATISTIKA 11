@@ -1,0 +1,15 @@
+df_maol = read.delim("clipboard")
+View(df_maol)
+model <- aov(korosi~metode, data=df_maol)
+summary(model)
+tukey.test <- TukeyHSD(model)
+tukey.test
+df_nama=PlantGrowth
+View(df_maol)
+df_maol=PlantGrowth
+View(df_maol)
+head(df_maol)
+model <-aov(weight~group, data=df_maol)
+summary(model)
+tukey.test <- TukeyHSD(model)
+tukey.test
